@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.svs.svs.ActivityText">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/inputContact"
+        android:layout_toLeftOf="@+id/btnBrowse"
+        android:layout_toStartOf="@+id/btnBrowse"
+        android:layout_above="@+id/inputMessage"
+        android:inputType="text|textPersonName" />
+
+    <Button
+        android:text="Browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnBrowse"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_design"/>
+
+    <Button
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSend"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_design"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_delete"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/btnSend"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnImage" />
+
+    <Button
+        android:text="Select Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnImage"
+        android:background="@drawable/button_design"
+        android:textColor="@color/colorWhite"
+        android:layout_alignBaseline="@+id/btnCapture"
+        android:layout_alignBottom="@+id/btnCapture"
+        android:layout_toLeftOf="@+id/btnCapture"
+        android:layout_toStartOf="@+id/btnCapture"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp" />
+
+    <Button
+        android:text="Capture Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCapture"
+        android:background="@drawable/button_design"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_below="@+id/btnBrowse"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
